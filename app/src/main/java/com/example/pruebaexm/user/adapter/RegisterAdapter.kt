@@ -22,7 +22,7 @@ class RegisterAdapter: RecyclerView.Adapter<RegisterAdapter.ViewHolder>() {
             .inflate(R.layout.item_register, parent, false)
     )
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "SuspiciousIndentation")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val dataItem = listData[position]
         holder.vBind.apply {

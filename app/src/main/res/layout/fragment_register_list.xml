@@ -16,7 +16,7 @@
         android:text="Nuevo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#4775CB"
+        android:background="@drawable/cirucularborder"
         android:textColor="@color/white"
         />
 

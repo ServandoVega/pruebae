@@ -9,6 +9,7 @@ import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
 import android.net.Uri
+import android.opengl.Visibility
 import android.os.Build
 import android.os.Bundle
 import android.preference.PreferenceManager
@@ -25,6 +26,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
@@ -194,6 +196,7 @@ class CreateRegisterFragment : Fragment() {
 
     private fun handleCameraImage() {
         Glide.with(this).load(currentImageUri).into(vBind.imgCard)
+        vBind.imgCard.visibility = View.VISIBLE
 
     }
 
